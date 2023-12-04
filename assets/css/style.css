@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 nov. 2023, 15:51:01
+    Author     : webmaster
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Reenie Beanie';font-size: 22px;
+}
+
+p {
+    font-family: 'Lato';
+    color: #8E8E8E;
+        font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+        font-size: 4rem;
+}
+
+.offres {
+    background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(http://7theme.com/tanzania/wp-content/uploads/2019/11/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.offres .item, .offres .item a, .offres h1 {
+    color: white;
+}
+
+#principal {
+    background-color: rgb(20, 11, 3);
+    background-image: url(http://7theme.com/tanzania/wp-content/uploads/2019/11/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.owl-accueil {
+        padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 0;
+    width: auto;
+}
+
+.dest {
+    position: relative;
+}
+
+.dest .titre {
+    position: absolute;
+    bottom: 39px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.destination {
+    background-color: #000000;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(http://7theme.com/tanzania/wp-content/uploads/2019/11/sl2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.navbar {
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+
+#principal {
+    margin-top: -100px;
+}
+
+footer {
+     background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(http://7theme.com/tanzania/wp-content/uploads/2019/11/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    color: white;
+}
