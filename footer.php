@@ -19,13 +19,30 @@
                     <div class="col-lg-4">
                         <img class="img-fluid" src="<?php echo get_field('logo_blanc', 'option')['url']; ?>">
                     </div>
-                    <div class="col-lg-4">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a><i class="fa-solid fa-phone"></i> (+261) 669 - 694 333</a></li>
-                            <li><a><i class="fa-regular fa-envelope"></i> info@bobovoyages.com</a></li>
-                        </ul>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li><a><i class="fa-solid fa-phone"></i> (+261) 669 - 694 333</a></li>
+                                    <li><a><i class="fa-regular fa-envelope"></i> info@bobovoyages.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>Nos réseaux</h4>
+                                <ul>
+                                    <li><a><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>Histoire</h4>
+                            <p>Plongez dans une aventure extraordinaire au sommet de l’Afrique ! Le Kilimandjaro vous attend pour une expérience de safari inégalée, où la majesté de la nature se dévoile sous ses plus beaux atours.</p>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </footer>

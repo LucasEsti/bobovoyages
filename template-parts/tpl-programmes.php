@@ -4,34 +4,38 @@
  * Template Name: programmes
  */
 get_header(); ?>
+<?php if( have_rows('home') ): 
+     while( have_rows('home') ): the_row(); ?>
+<div id="principal" class="w-100 mb-5">
+        <div class="owl-accueil owl-carousel owl-theme">
+            <?php 
+                    foreach(get_sub_field('images') as $element): ?>
+            <div class="item">
+                <img alt="" class="img-fluid" src="<?php echo $element["url"]; ?>">
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+<?php endwhile; endif; ?>
+
+<div class="container">
+    <div class="row">
+        <?php echo get_field('description'); ?>
+    </div> 
+</div> 
+
 <div class="container-fluid">
-        <h1>UL timeline cards</h1>
+        <h1>Route manchan : 6 jours</h1>
         <ul id="timeline">
-            <li style="--accent-color:#41516C">
-                <div class="date">2002</div>
-                <div class="title">Title 1</div>
-                <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+            <?php 
+                    foreach(get_field('programme') as $element): ?>
+            <li style="--accent-color:<?php echo $element["couleur"]; ?>">
+                <div class="date"><?php echo $element["jour"]; ?></div>
+                <div class="title"><?php echo $element["titre"]; ?></div>
+                <div class="descr"><?php echo $element["description"]; ?>
+                </div>
             </li>
-            <li style="--accent-color:#FBCA3E">
-                <div class="date">2007</div>
-                <div class="title">Title 2</div>
-                <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
-            </li>
-            <li style="--accent-color:#E24A68">
-                <div class="date">2012</div>
-                <div class="title">Title 3</div>
-                <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellend . Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
-            </li>
-            <li style="--accent-color:#1B5F8C">
-                <div class="date">2017</div>
-                <div class="title">Title 4</div>
-                <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
-            </li>
-            <li style="--accent-color:#4CADAD">
-                <div class="date">2022</div>
-                <div class="title">Title 5</div>
-                <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
-            </li>
+            <?php endforeach; ?>
         </ul>
     </div>   
 
